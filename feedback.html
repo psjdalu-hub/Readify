@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Share your feedback and get answers to common questions">
+    <title>Feedback - Readify</title>
+
+    <!-- Your existing CSS stays unchanged -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <span class="logo-text">📚 Readify</span>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explorer.html">Book Explorer</a></li>
+            <li><a href="tracker.html">Progress Tracker</a></li>
+            <li><a href="recommend.html">Recommender</a></li>
+            <li><a href="flow.html">Reading Flow</a></li>
+            <li><a href="feedback.html" class="active">Feedback</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<header class="page-header">
+    <div class="container">
+        <!-- SINGLE h1 -->
+        <h1>💬 Feedback & Support</h1>
+        <p>We'd love to hear from you</p>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="main-content">
+    <div class="container">
+
+        <div class="content-grid">
+
+            <!-- Feedback Form -->
+            <section class="feedback-card">
+                <h2 class="card-title">Send Us Feedback</h2>
+
+                <div class="success-message" id="successMessage">
+                    <span class="success-icon">✓</span>
+                    <span>Thank you! Your feedback has been submitted successfully.</span>
+                </div>
+
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" id="name" required>
+                        <p class="error-message">Please enter your name</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" required>
+                        <p class="error-message">Please enter a valid email address</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" maxlength="500" required></textarea>
+                        <p class="char-count"><span id="charCount">0</span>/500 characters</p>
+                        <p class="error-message">Please enter your message</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                </form>
+            </section>
+
+            <!-- Contact Information -->
+            <aside class="contact-card">
+                <h2 class="card-title">Get in Touch</h2>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-info">
+                        <h3>Email Us</h3>
+                        <p>support@readify.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">💬</div>
+                    <div class="contact-info">
+                        <h3>Live Chat</h3>
+                        <p>Available Mon–Fri, 9AM–5PM</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-info">
+                        <h3>Social Media</h3>
+                        <p>Follow us @readifyapp</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">⏱️</div>
+                    <div class="contact-info">
+                        <h3>Response Time</h3>
+                        <p>We typically respond within 24 hours</p>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2 class="card-title">❓ Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I save my reading progress?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Your progress is saved locally in your browser.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I use Readify on mobile?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, Readify is fully responsive.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Submitted Feedback -->
+        <section class="submitted-section">
+            <h2 class="card-title">📝 Your Submitted Feedback</h2>
+
+            <div class="feedback-list" id="feedbackList">
+                <div class="empty-feedback">
+                    <p>No feedback submitted yet.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <h2 class="footer-heading">📚 Readify</h2>
+                <p>Your companion for a better reading experience</p>
+            </div>
+
+            <div class="footer-section">
+                <h2 class="footer-heading">Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explorer.html">Book Explorer</a></li>
+                    <li><a href="tracker.html">Progress Tracker</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2 class="footer-heading">Resources</h2>
+                <ul>
+                    <li><a href="flow.html">Reading Flow</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Readify. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js-pages/feedback.js"></script>
+</body>
+</html>
